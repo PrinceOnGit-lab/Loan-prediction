@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>loan prediction</title>
+</head>
+<body>
+
+    <h1>loan prediction</h1>
+    {% if result %}
+        <p>{{ result }}</p>
+    {% endif %}
+    <form method="post" action="/predict">
+        <label>Age</label><br>
+        <input type="text" name="age"><br><br>
+
+        <label>Income</label><br>
+        <input type="text" name="income"><br><br>
+
+        <label>Credit Score</label><br>
+        <input type="text" name="credit_score"><br><br>
+
+        <input type="submit" value="Predict"><br><br>
+    </form>
+
+</body>
+</html>
